@@ -7,4 +7,10 @@ class MeuAplicativo(App):
     def build(self):
         return GUI
     
+    def on_start(self):
+        self.root.ids["moeda1"] = "Dolar R$"
+        self.root.ids["moeda2"] = "Euro R$"
+        self.root.ids["moeda3"] = "BitCoin R$"
+        self.root.ids["moeda4"] = "Ethereum R$"
+
 MeuAplicativo().run()
