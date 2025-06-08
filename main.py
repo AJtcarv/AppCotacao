@@ -8,9 +8,9 @@ class MeuAplicativo(App):
         return GUI
     
     def on_start(self):
-        self.root.ids["moeda1"] = "Dolar R$ 6"
-        self.root.ids["moeda2"] = "Euro R$ 7"
-        self.root.ids["moeda3"] = "BitCoin R$ 35k"
-        self.root.ids["moeda4"] = "Ethereum R$"
+        self.root.ids["moeda1"].text = "Dolar R$ 6"
+        self.root.ids["moeda2"].text = "Euro R$ 7"
+        self.root.ids["moeda3"].text = "BitCoin R$ 35k"
+        self.root.ids["moeda4"].text = "Ethereum R$"
 
 MeuAplicativo().run()
